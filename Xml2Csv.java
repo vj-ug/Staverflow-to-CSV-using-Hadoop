@@ -6,21 +6,19 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
+
 import org.apache.hadoop.io.Text;
+
 import org.apache.hadoop.mapreduce.Job;
+
 import org.apache.hadoop.mapreduce.Mapper;
+
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 import org.apache.mahout.text.wikipedia.XmlInputFormat;
 
-/**
- * This class provides functionality to transform stack-overflow data dump's xml
- * to csv format using Apache Hadoop
- * 
- * @author vishrut
- * 
- */
+
 public class Xml2csv {
 
 	// Mapper class that reads line as a individual row
